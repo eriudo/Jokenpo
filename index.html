@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Page Title</title>
+  <meta charset="UTF-8"/>
+</head>
+<body>
+  <script>
+    // Your JavaScript goes here!
+    let scorePlayer, scoreComputer;
+    scorePlayer = 0;
+    scoreComputer = 0;
+
+    function computerPlay(){
+       let possiblePlays = ["rock", "paper" , "scissors"]
+        return (possiblePlays[Math.floor(Math.random() *3)])
+    }
+    
+    function userPlay(){
+        let play = prompt()
+        return (play.toLocaleLowerCase());
+    }
+    function playRound(playerSelection, computerSelection){ 
+        switch (playerSelection){
+            case "rock":
+                if (computerSelection == "rock"){
+                    console.log ("Its a draw")
+                } else if (computerSelection == "paper"){
+                    scoreComputer = scoreComputer + 1;
+                    console.log ("The Computer Won this round")
+                } else if (computerSelection == "scissors"){
+                    scorePlayer = scorePlayer + 1;
+                    console.log ("The Player Won this round");
+                }
+                break;
+            case "paper":
+                if (computerSelection == "paper"){
+                    console.log ("Its a draw")
+                } else if (computerSelection == "scissors"){
+                    scoreComputer = scoreComputer + 1;
+                    console.log ("The Computer Won this round")
+                } else if (computerSelection == "rock"){
+                    scorePlayer = scorePlayer + 1;
+                    console.log ("The Player Won this round");
+                }
+                break;
+            case "scissors":
+                if (computerSelection == "scissors"){
+                    console.log ("Its a draw")
+                } else if (computerSelection == "rock"){
+                    scoreComputer = scoreComputer + 1;
+                    console.log ("The Computer Won this round")
+                } else if (computerSelection == "paper") {
+                    scorePlayer = scorePlayer + 1;
+                    console.log ("The Player Won this round");
+                }
+                break;
+    } 
+    }
+    function start(){
+        playRound (userPlay(), computerPlay());
+        console.log (`The score is ${scorePlayer} Player and ${scoreComputer} Computer`)
+            if (scorePlayer == 5){
+                scorePlayer = 0;
+                scoreComputer = 0;
+                return ("The winner game is the Player")
+            } else if (scoreComputer == 5){
+                scorePlayer = 0;
+                scoreComputer = 0;
+                return ("The winner game is the Computer")
+            } else {
+                return (start(scorePlayer, scoreComputer));
+            }
+    }        
+    
+    
+    
+    
+
+    
+
+  
+    
+  </script>
+</body>
+</html>
