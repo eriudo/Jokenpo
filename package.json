@@ -1,0 +1,19 @@
+{
+  "name": "jokenpo",
+  "version": "1.0.0",
+  "description": "site do jogo classico \"pedra, papel e tesoura\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eriudo/Jokenpo.git"
+  },
+  "author": "Erildo Gomes",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/eriudo/Jokenpo/issues"
+  },
+  "homepage": "https://github.com/eriudo/Jokenpo#readme"
+}
