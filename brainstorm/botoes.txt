@@ -1,0 +1,7 @@
+botoes:
+- start
+- Player Selection:
+	- Rock
+ 	- Scissors
+	- Paper
+- Reset

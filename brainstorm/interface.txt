@@ -1,0 +1,17 @@
+- desce a arena com o nome joken po.
+- aparece os dois bonequinhos na arena (1 de cada vez).
+	ao mesmo tempo:
+	- aparece o nome PLAYER(ou nome do jogador), vindo da esquerda.
+	- aparece o nome COMPUTER, vindo da direita.
+- Arena apaga e surge o nome ROUND 1:
+	- Mensagem: PLAYER(ou nome do jogador) prepara-se para 
+	escolher sua jogada.
+- volta para o que tava mostrando antes.
+- aparece a opçao em icones (pedra,papel e tesoura) em baixo do nome PLAYER vindo da 
+mesma direção esquerda.
+- jogador seleciona sua jogada (clicando no icone desejavel)
+- a tela fica preta com o nome JOKENPO e um X no centro a opçao clicada pelo player
+surge da esquerda e o do COMPUTER da direita.
+- em baixo dos icones da opções escolhidas, uma mensagem informando o resultado do round.
+
+	
