@@ -1,0 +1,115 @@
+body {
+  background: #e5e5e5;
+  margin: 0px;
+  padding: 0px;
+}
+.HomePage {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.HomePageInfos {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.Title {
+  font-size: 50px;
+  color: orchid;
+  margin-bottom: 10px;
+}
+.SubTitle {
+  color: orchid;
+  margin-top: 0px;
+}
+.Players {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.Player {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  margin-left: 20%;
+}
+.UserPlayer {
+  display: flex;
+}
+.ScorePlayer {
+  display: flex;
+  justify-content: center;
+  width: 50px;
+  height: 60px;
+  background-color: white;
+  margin-left: 39px;
+}
+.Computer {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  margin-right: 15%;
+}
+.ComputerPlayer {
+  display: flex;
+}
+.ScoreComputer {
+  display: flex;
+  justify-content: center;
+  width: 50px;
+  height: 60px;
+  background-color: white;
+  margin-left: 68px;
+}
+.Menu {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  text-align: center;
+}
+.Button {
+  color: white;
+  background-color: black;
+  font-size: 30px;
+  border-width: 3px;
+  border-color: white;
+}
+#btn_start {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+#btn_reset {
+  border-width: 3px;
+  margin-top: 100px;
+}
+.SelectMovePage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.ButtonsChoice {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.InformationsMovePage {
+  font-size: 50px;
+  color: orchid;
+  margin-bottom: 10px;
+}
+#buttonBack {
+  border-width: 3px;
+  margin-top: 100px;
+}
+.ResultPage {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.WinPage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

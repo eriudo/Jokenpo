@@ -1,13 +1,13 @@
 // Your JavaScript goes here!
-import start from "./start.js";
-import playRound from "./playRound.js";
-import computerPlay from "./computerPlay.js";
+import gameState from "./gameState.js";
 
-let scorePlayer, scoreComputer;
-scorePlayer = 0;
-scoreComputer = 0;
+const displayMovePage = document.querySelector(".SelectMovePage");
+displayMovePage.style = "display: none;";
+const displayResultPage = document.querySelector(".ResultPage");
+displayResultPage.style = "display: none;";
+const displayWinPage = document.querySelector(".WinPage");
+displayWinPage.style = "display: none;";
 
-let btnStart = document.querySelector("#btn_start");
-btnStart.addEventListener("click", () => {
-  start();
-});
+document.dispatchEvent(
+  new CustomEvent("changeState", { detail: "start screen" })
+);

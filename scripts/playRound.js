@@ -1,36 +1,49 @@
+import scores from "./scores.js";
+
 function playRound(playerSelection, computerSelection) {
+  scores.playerSelect = playerSelection;
+  scores.computerSelect = computerSelection;
   switch (playerSelection) {
     case "rock":
       if (computerSelection == "rock") {
-        console.log("Its a draw");
+        scores.win = "its a draw";
+        scores.round = scores.round + 1;
       } else if (computerSelection == "paper") {
-        scoreComputer = scoreComputer + 1;
-        console.log("The Computer Won this round");
+        scores.scoreComputer = scores.scoreComputer + 1;
+        scores.round = scores.round + 1;
+        scores.win = "The Computer Win the round";
       } else if (computerSelection == "scissors") {
-        scorePlayer = scorePlayer + 1;
-        console.log("The Player Won this round");
+        scores.scorePlayer = scores.scorePlayer + 1;
+        scores.round = scores.round + 1;
+        scores.win = "You Win the round";
       }
       break;
     case "paper":
       if (computerSelection == "paper") {
-        console.log("Its a draw");
+        scores.win = "its a draw";
+        scores.round = scores.round + 1;
       } else if (computerSelection == "scissors") {
-        scoreComputer = scoreComputer + 1;
-        console.log("The Computer Won this round");
+        scores.scoreComputer = scores.scoreComputer + 1;
+        scores.round = scores.round + 1;
+        scores.win = "The Computer Win the round";
       } else if (computerSelection == "rock") {
-        scorePlayer = scorePlayer + 1;
-        console.log("The Player Won this round");
+        scores.scorePlayer = scores.scorePlayer + 1;
+        scores.round = scores.round + 1;
+        scores.win = "You Win the round";
       }
       break;
     case "scissors":
       if (computerSelection == "scissors") {
-        console.log("Its a draw");
+        scores.win = "its a draw";
+        scores.round = scores.round + 1;
       } else if (computerSelection == "rock") {
-        scoreComputer = scoreComputer + 1;
-        console.log("The Computer Won this round");
+        scores.scoreComputer = scores.scoreComputer + 1;
+        scores.round = scores.round + 1;
+        scores.win = "The Computer Win the round";
       } else if (computerSelection == "paper") {
-        scorePlayer = scorePlayer + 1;
-        console.log("The Player Won this round");
+        scores.scorePlayer = scores.scorePlayer + 1;
+        scores.round = scores.round + 1;
+        scores.win = "You Win the round";
       }
       break;
   }

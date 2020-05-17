@@ -1,20 +1,65 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Page Title</title>
+    <title>Jokenpo</title>
     <meta charset="UTF-8" />
     <link href="style.css" rel="stylesheet" />
   </head>
   <body>
-    <button id="btn_start">Start</button>
-    <div class="botoes_choices">
-      <button id="btn_choice_rock">Rock</button>
-      <button id="btn_choice_scissors">Paper</button>
-      <button id="btn_choice_scissors">Scissors</button>
-      <div class="reset">
-        <button id="btn_reset">Reset</button>
+    <div class="HomePage">
+      <div class="HomePageInfos">
+        <h1 class="Title">JOKENPO</h1>
+        <h2 class="Subtitle">
+          Press Start to begin the game and let the best thing win...
+        </h2>
       </div>
-      <script src="scripts/index.js" type="module"></script>
+      <div class="Players">
+        <div class="Player">
+          <h1 class="UserPlayer">PLAYER</h1>
+          <h2 class="ScorePlayer"></h2>
+        </div>
+        <div id="menuHomePage" class="Menu">
+          <button id="btn_start" class="Button">Start</button>
+          <button id="btn_reset" class="Button">Reset</button>
+        </div>
+        <div class="Computer">
+          <h1 class="ComputerPlayer">COMPUTER</h1>
+          <h2 class="ScoreComputer"></h2>
+        </div>
+      </div>
+      <!-- acredito que essa manipulaçao do numero Score tenha que ser feita no JS -->
     </div>
+    <div class="SelectMovePage">
+      <h1 id="informationsMovePage" class="Title">SELECT YOUR MOVE:</h1>
+      <div id="menuMove" class="Menu">
+        <button id="btn_choice_rock" class="Button">Rock</button>
+        <button id="btn_choice_paper" class="Button">Paper</button>
+        <button id="btn_choice_scissors" class="Button">Scissors</button>
+      </div>
+    </div>
+    <div class="ResultPage">
+      <h1 id="roundNumber" class="Title">Round: </h1>
+      <div class="Players">
+        <div class="Player">
+          <h1 class="UserPlayer">PLAYER</h1>
+          <h2 id="movePlayer" class="MoveSelected">Move</h2>
+        </div>
+        <div id="buttonsResult" class="Menu">
+          <button id="btn_next_round" class="Button">Next Round</button>
+        </div>
+        <div class="Computer">
+          <h1 class="ComputerPlayer">COMPUTER</h1>
+          <h2 id="moveComputer" class="MoveSelected">Move</h2>
+        </div>
+      </div>
+    </div>
+      <div id="winPage" class="WinPage">
+        <div class="Menu">
+        <h1 class="WinRound">....</h1>
+        <button id="btn_back" class="Button">Back</button>
+      </div>
+    </div>
+  </div>
+    <script src="scripts/index.js" type="module"></script>
   </body>
 </html>
